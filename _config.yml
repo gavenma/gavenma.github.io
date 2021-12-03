@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ziye Ma's Personal Site"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Ziye Ma"
 description              : &description "PhD Candidate at EECS, UC Berkeley"
@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=MJ7X-bAAAAAJ&hl=en"
-  email            :
+  email            : ziyema@berkeley.edu
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
