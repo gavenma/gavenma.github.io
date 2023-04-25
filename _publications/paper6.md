@@ -1,8 +1,8 @@
 ---
 title: "Geometric Analysis of Noisy Low-rank Matrix Recovery in the Exact Parameterized and the Overparameterized Regimes"
 collection: publications
-excerpt: 'Ziye Ma<sup>*</sup>, Yingjie Bi<sup>*</sup>, Javad Lavaei, Somayeh Sojoudi'
-date: 2021-11-09
-venue: 'Preprint. In Review at INFORMS Journal on Optimization'
-paperurl: '/files/papers/rip_linear_journal.pdf'
+excerpt: 'Ziye Ma, Yingjie Bi, Javad Lavaei, Somayeh Sojoudi'
+date: 2023-04-14
+venue: 'INFORMS Journal on Optimization'
+paperurl: 'https://pubsonline.informs.org/doi/pdf/10.1287/ijoo.2023.0090'
 ---
