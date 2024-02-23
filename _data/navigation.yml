@@ -3,10 +3,8 @@ main:
   - title: "Publications"
     url: /publications/  
 
-  - title: "Recruitment"
-    url: /recruitment/
-  # - title: "Teaching"
-  #   url: /teaching/      
+  # - title: "Recruitment"
+  #   url: /recruitment/      
   
   # - title: "CV"
   #   url: /files/resume_cv.pdf
