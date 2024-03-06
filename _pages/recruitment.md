@@ -33,7 +33,7 @@ The RA position offers considerable flexibility, available as either remote or i
 
 ## How to Apply
 
-Prospective candidates are encouraged to reach out via my [email](mailto:ziyema@berkeley.edu). Please include the following details in your application:
+Prospective candidates are encouraged to reach out via my email: [ziyema at berkeley dot edu](mailto:ziyema@berkeley.edu). Please include the following details in your application:
 
 - A brief statement of your motivation for applying and/or research interests. We are keen to learn about your personal goals and aspirations.
 - A CV detailing your educational background, list of publications (including works in progress, with clear explanations), and any relevant awards or experiences.
