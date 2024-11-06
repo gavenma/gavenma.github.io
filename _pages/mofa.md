@@ -27,15 +27,6 @@ Education:
 
 ## Research Assistants
 
-### Xianyuan Song
-
-Xinyuan is an incoming PhD student at Emory University. His research interests include matrix sensing, sparse recovery and other non-convex optimization, deep learning problems.
-
-Education:
-
-- M.Sc. in Statistics, National University of Singapore (NUS)
-- B.Sc. in Physics and Mathematics, Peking University
-
 ### Jinji Yang
 
 He is currently a research assistant in the Department of Computer Science at the City University of Hong Kong. His research interests include matrix optimization and matrix sensing. 
