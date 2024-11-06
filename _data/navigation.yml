@@ -6,6 +6,8 @@ main:
   - title: "Recruitment"
     url: /recruitment/      
   
+  - title: "MOFA Lab"
+    url: /mofa/  
   # - title: "CV"
   #   url: /files/resume_cv.pdf
     
