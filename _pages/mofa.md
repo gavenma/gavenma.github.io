@@ -4,13 +4,13 @@ permalink: /mofa/
 layout: single
 ---
 
-Welcome to the **MOFA(Machine Optimization and Fundamental Algorithms) Lab**! Our goal is to establish explainable and simple rules for tackling modern machine learning, mostly via the use of optimization thoery and alike. 
+Welcome to the **MOFA(Machine Optimization and Fundamental Algorithms) Lab**! Our goal is to establish explainable and simple rules for tackling modern machine learning, mostly via the use of optimization theory and alike. 
 
 ## PhD Students
 
 ### Jiahe Chen
 
-Jiahe a Ph.D. Ph.D. student in the Department of Computer Science at City University of Hong Kong focusing on zeroth-order optimization and machine learning.
+Jiahe is a Ph.D. student in the Department of Computer Science at City University of Hong Kong, supervised by Professor Ziye Ma. He mostly focuses on zeroth-order optimization and machine learning.
 
 Education:
 
