@@ -16,13 +16,13 @@ We are offering several fully-funded PhD positions for a fixed duration of 4 yea
 
 -  Role of parametrization in non-convex problems (exploring the effects of model size and potentially coming up with clever ways to reduce large models).
 -  New optimization algorithms tailored to modern machine learning, with cheap oracle estimates and enhanced saddle-escaping abilities.
--  Solving non-convex problems to optimality (for example via the use of convex relaxations).
--  Application of theory in ML pipelines to achieve more effient and robust training and fine-tuning.
+-  Zero-th order optimiztion.
+-  Data efficient machine learning and quantization techniques for LLMs.
 
 Regardless, a certain degree of mathematical maturity is preferred, and exceptional applicants will have the opportunity to compete for the prestigious [HKPFS](https://www.cityu.edu.hk/pg/hong-kong-phd-fellowship-scheme) scheme.
 
 ### Research Assistants (RA)
-The RA position offers considerable flexibility, available as either remote or in-person and as paid or unpaid, depending on the candidate's circumstances and objectives. If our research interests align, I am open to discussing a mutually beneficial arrangement.
+Right now we do not offer regular RA positions, and such applications are processed on a case-by-case basis. If you have a clear research vision and plan, and think that I could be of any help to you, please let me know so that we could discuss further.
 
 ## Some (Potential) Pros
 
