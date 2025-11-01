@@ -11,9 +11,11 @@ Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in 
 
 MOFA lab
 ======
-I am currently the Principle Investigator of the [Machine Optimization and Fundamental Algorithms](mofa.md) lab, a place where vibrant young researchers work together to advance the state-of-the-art of ML theory and practices. We have multiple fully-funded PhD and post-doc positions open. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, Natural Science Foundation of China, CityU HK, and other partners. 
+I am currently the Principle Investigator of the [Machine Optimization and Fundamental Algorithms](mofa.md) lab, a place where vibrant young researchers work together to advance the state-of-the-art of ML theory and practices. We have multiple fully-funded PhD and post-doc positions open. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, CityU HK, and other partners. 
 
-I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
+<!-- Our lab is supported through research grants by Research Grant Council of Hong Kong, Natural Science Foundation of China, CityU HK, and other partners. 
+
+I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well. -->
 
 Research Interest
 ======

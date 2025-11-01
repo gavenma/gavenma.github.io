@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Ziye Ma"
   avatar           : "profile.JPG"
-  bio              : "Presidential Assistant Professor @CS, CityUHK"
+  bio              : "Assistant Professor @CS, CityUHK"
   location         : "AOE"
   employer         :
   pubmed           : 
@@ -146,6 +146,7 @@ exclude:
   - package.json
   - tmp
   - vendor
+  - /publications/
 keep_files:
   - .git
   - .svn
