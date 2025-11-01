@@ -147,6 +147,7 @@ exclude:
   - tmp
   - vendor
   - /publications/
+  - /mofa/
 keep_files:
   - .git
   - .svn

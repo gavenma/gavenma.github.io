@@ -9,9 +9,9 @@ redirect_from:
 ---
 Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in the [CS department](https://www.cs.cityu.edu.hk) at City Universtiy of Hong Kong. I am especially grateful to receive the honorary title of presidential assistant professor at CityU. I'm also known as Gaven, so feel free to call me whichever way you prefer. I obtained my Ph.D. from the EECS department of UC Berkeley, supervised by [Somayeh Sojoudi](https://people.eecs.berkeley.edu/~sojoudi/). Prior to that, I studied Engineering Science at the University of Toronto and did research at [STARS lab](https://starslab.ca). The majority of my early life was spent jumping back and forth between Beijing and Toronto, both of which places I call home.
 
-MOFA lab
+Recruitments
 ======
-I am currently the Principle Investigator of the [Machine Optimization and Fundamental Algorithms](mofa.md) lab, a place where vibrant young researchers work together to advance the state-of-the-art of ML theory and practices. We have multiple fully-funded PhD and post-doc positions open. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, CityU HK, and other partners. 
+We have multiple fully-funded PhD and post-doc positions open. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, CityU HK, and other partners. 
 
 <!-- Our lab is supported through research grants by Research Grant Council of Hong Kong, Natural Science Foundation of China, CityU HK, and other partners. 
 
