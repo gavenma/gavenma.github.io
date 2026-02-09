@@ -4,5 +4,5 @@ collection: publications
 excerpt: 'Jiahe Chen, Ziye Ma'
 date: 2025-05-20
 venue: 'Preprint.'
-paperurl: '/files/papers/VAMO__arXiv_.pdf'
+paperurl: 'https://arxiv.org/pdf/2505.13954'
 ---

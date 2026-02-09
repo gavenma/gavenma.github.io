@@ -1,8 +1,8 @@
 ---
-title: "Structured Noise to Help Non-Convexity: Solving Matrix Completion as Noisy Matrix Sensing"
+title: "Matrix Sensing with Kernel Optimal Loss: Robustness and Optimization Landscape"
 collection: publications
-excerpt: 'Ziye Ma'
-date: 2025-01-30
-venue: 'Preprint.'
-paperurl: '/files/papers/mc_asnoisy_ms.pdf'
+excerpt: 'Xinyuan Song, Ziye Ma'
+date: 2026-01-22
+venue: 'Conference on Parsimony and Learning (CPAL) 2026'
+paperurl: '/files/papers/44_Matrix_Sensing_with_Kernel_.pdf'
 ---
