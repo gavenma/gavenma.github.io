@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Homepage"
+title                    : "Ziye Ma"
 title_separator          : "-"
 name                     : &name "Ziye Ma"
 description              : &description "Presidential Assistant Professor @CS, CityUHK"
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -148,6 +148,13 @@ exclude:
   - vendor
   - /publications/
   - /mofa/
+  # These sections are intentionally not published on the public site.
+  - _pages/cv.md
+  - _pages/talks.html
+  - _pages/talkmap.html
+  - _pages/teaching.html
+  - _teaching
+  - _talks
 keep_files:
   - .git
   - .svn
@@ -178,7 +185,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
@@ -187,7 +194,7 @@ collections:
     output: true
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 

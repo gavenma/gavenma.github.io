@@ -2,7 +2,7 @@
 permalink: /
 title: "Personal Website of Ziye(Gaven) Ma"
 excerpt: "About me"
-author_profile: true
+layout: home
 redirect_from: 
   - /about/
   - /about.html
@@ -21,7 +21,7 @@ My research aims to develop explainable and efficient machine learning systems, 
 From a high level, my research mostly involves two parts:
 
 1. Machine learning theory, studied under the framework of non-convex landscape analysis. We aim to understand under what conditions ML practitioners can find global or generalizable solutions, and what guarantees accompany them.
-2. Efficient machine learning practices, guided by theories developed in the first part. We aim to tackle three aspects of efficient machine learning: data efficiency (using less data to achieve similar performance, given the current lack of data), algorithm efficieny (using zeroth order optimization to reduce memory and compute demands for training and fine-tuning), model efficiency (better quantization strategies for compressing model sizes).
+2. Efficient machine learning practices, guided by theories developed in the first part. We aim to tackle three aspects of efficient machine learning: data efficiency (understand what data to use), algorithmic efficieny (better practices and theories in pre/mid/post-training), and model efficiency (using smaller models to achieve similar performance).
 
 For any inquiries, concerns, or suggestions regarding my research, please do not hesitate to contact me via email. I am committed to engaging in fruitful discussions and am always open to feedback.
 

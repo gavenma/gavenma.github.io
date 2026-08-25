@@ -1,0 +1,58 @@
+{% include base_path %}
+
+{% assign paper_link = post.paperurl | default: post.url %}
+{% assign paper_download = post.paperurl %}
+{% assign paper_label = "Paper" %}
+{% assign paper_is_external = false %}
+
+{% if post.arxiv_url %}
+  {% assign paper_link = post.arxiv_url %}
+  {% assign paper_label = "arXiv" %}
+  {% assign paper_is_external = true %}
+{% elsif post.paperurl contains 'arxiv.org/pdf/' %}
+  {% assign paper_link = post.paperurl | replace: 'https://arxiv.org/pdf/', 'https://arxiv.org/abs/' | replace: '.pdf', '' %}
+  {% assign paper_label = "arXiv" %}
+  {% assign paper_is_external = true %}
+{% elsif post.paperurl contains 'arxiv.org/abs/' %}
+  {% assign paper_label = "arXiv" %}
+  {% assign paper_is_external = true %}
+{% elsif post.paperurl contains '://' %}
+  {% assign paper_is_external = true %}
+{% endif %}
+
+{% capture publication_text %}{{ post.title }} {{ post.excerpt | strip_html }} {{ post.venue | strip_html }}{% endcapture %}
+{% assign publication_id = post.title | slugify %}
+
+<article class="publication-item{% if include.compact %} publication-item--compact{% endif %}" data-publication-item data-publication-year="{{ post.date | date: '%Y' }}" data-publication-text="{{ publication_text | downcase | strip_newlines | escape }}">
+  <div class="publication-item__index" aria-hidden="true">{{ post.date | date: '%Y' }}</div>
+  <div class="publication-item__body">
+    <div class="publication-item__heading">
+      <h2 class="publication-item__title">
+        <a href="{{ paper_link }}"{% if paper_is_external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ post.title }}</a>
+      </h2>
+      {% if post.abstract %}
+        <button class="publication-item__toggle" type="button" data-abstract-toggle aria-expanded="false" aria-controls="abstract-{{ publication_id }}">
+          <span>Abstract</span>
+          <i class="fas fa-plus" aria-hidden="true"></i>
+        </button>
+      {% endif %}
+    </div>
+
+    <p class="publication-item__authors">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    <p class="publication-item__venue">{{ post.venue }} <span aria-hidden="true">·</span> {{ post.date | date: '%Y' }}</p>
+
+    {% if post.abstract %}
+      <div id="abstract-{{ publication_id }}" class="publication-item__abstract" data-abstract-panel aria-hidden="true">
+        <p>{{ post.abstract | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+      </div>
+    {% endif %}
+
+    <div class="publication-item__links">
+      <a class="publication-link publication-link--primary" href="{{ paper_link }}"{% if paper_is_external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ paper_label }} <span aria-hidden="true">↗</span></a>
+      {% if paper_download and paper_download != paper_link %}
+        <a class="publication-link" href="{{ paper_download }}" target="_blank" rel="noopener noreferrer">PDF <span aria-hidden="true">↗</span></a>
+      {% endif %}
+      <a class="publication-link" href="{{ base_path }}{{ post.url }}" rel="permalink">Record <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+</article>

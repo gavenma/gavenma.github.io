@@ -6,5 +6,7 @@ excerpt: 'Ziye Ma, Somayeh Sojoudi'
 date: 2021-10-01
 venue: '2021 IEEE 8th International Conference on Data Science and Advanced Analytics (DSAA)'
 paperurl: 'https://arxiv.org/pdf/2010.08603.pdf'
+abstract: >-
+  We develop a sequential semidefinite-programming framework for neural-network robustness certification. By adding non-convex cuts through disjunctive programming, the method shrinks the relaxation gap toward zero. We analyze the approach theoretically and empirically as the number of cuts increases.
 ---
 [IEEE Entry](https://ieeexplore.ieee.org/abstract/document/9564161)
