@@ -11,7 +11,7 @@ Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in 
 
 Recruitments
 ======
-We have multiple fully-funded PhD and post-doc positions open. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, NSFC, CityU HK, and other partners. I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
+Our lab recruits full-time PhD students annually, but the quota may vary year by year. For those who are interested please send me a direct email. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, NSFC, CityU HK, and other partners. I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
 
 
 Research Interest
