@@ -6,7 +6,29 @@ layout: single
 
 Welcome to the **MOFA(Machine Optimization and Fundamental Algorithms) Lab**! Our goal is to establish explainable and simple rules for tackling modern machine learning, mostly via the use of optimization theory and alike. 
 
+## Post-Doctoral Researchers
+
+### Xinsong Ma
+
+### Jun Chen
+
 ## PhD Students
+
+### Hanzhang Wang
+
+Hanzhang is a Ph.D. student in the Department of Computer Science. He is most interested in LLM pre-training and its intersections with quantization.
+
+Education:
+
+- B.Sc. in Data Science, Harbin Institute of Technology (Shenzhen)
+  
+### Junze He
+
+Junze is a Ph.D. student in the Department of Computer Science at City University of Hong Kong. His research focuses on matrix optimization theory, and effects of over-parametrization.
+
+Education:
+
+- B.Sc. in Mathematics, Central South University
 
 ### Xiaying Chen
 
@@ -60,26 +82,16 @@ Education:
 
 - B.Sc. in Mathematics, University of Birmingham
 
-## Research Assistants
+## Alumni
 
 ### Jinji Yang
 
-He is currently a research assistant in the Department of Computer Science at the City University of Hong Kong. His research interests include matrix optimization and matrix sensing. 
-
-Education:
-
-- M.Sc. in Operations Research and Control, University of Shanghai for Science and Technology
-- B.Sc. in Mathematics and Applied Mathematics, University of Shanghai for Science and Technology
+Jinji worked as a RA in our lab and focused on matrix optimization and matrix sensing. He is currently pursuing his PhD degree in Soochow University.
 
 
 ### Kunhan Gao
 
-GAO Kunhan is an undergraduate student at City University of Hong Kong and part-time RA at MOFA. Her research interests focus around the optimization of machine learning algorithms and combinatorial optimization.
-
-Education:
-
-- B.Sc. in Data Science (Ongoing), City University of Hong Kong
-
+Kunhan was an undergraduate RA at the lab and worked on optimization related projects. She is currently pursuing her masters degree at Yale University.
 
 
 ## Join Us
