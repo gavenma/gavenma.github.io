@@ -12,6 +12,13 @@ Welcome to the **MOFA(Machine Optimization and Fundamental Algorithms) Lab**! Ou
 
 ### Jun Chen
 
+Jun Chen works as a Postdoctoral Fellow in the Department of Computer Science at City University of Hong Kong. His research interests lie in the theory and application of machine learning, particularly in statistical machine learning theory, unsupervised learning, and agentic AI.
+
+Education:
+
+- B.Sc. in Statistics, Taiyuan University of Technology
+- Ph.D. in Agricultural Information Engineering, Huazhong Agricultural University
+
 ## PhD Students
 
 ### Hanzhang Wang
@@ -24,7 +31,7 @@ Education:
   
 ### Junze He
 
-Junze is a Ph.D. student in the Department of Computer Science at City University of Hong Kong. His research focuses on matrix optimization theory, and effects of over-parametrization.
+Junze is a Ph.D. student in the Department of Computer Science. His research focuses on matrix optimization theory, and effects of over-parametrization.
 
 Education:
 
@@ -40,7 +47,7 @@ Education:
 
 ### Changrui Fang
 
-Changrui is a Ph.D. student in the Department of Computer Science at City University of Hong Kong, supervised by Professor Ziye Ma. His research interests include optimization, data efficient ML, and various mathematical topics. He also won a national second prize in mathematical modelling contest of China.
+Changrui is a Ph.D. student in the Department of Computer Science. His research interests include optimization, data efficient ML, and various mathematical topics. He also won a national second prize in mathematical modelling contest of China.
 
 Education:
 
@@ -48,7 +55,7 @@ Education:
 
 ### Bowen Zhang
 
-Bowen is a Ph.D. student in the Department of Computer Science at City University of Hong Kong, supervised by Professor Ziye Ma. He mostly focuses on fine-tuning techniques.
+Bowen is a Ph.D. student in the Department of Computer Science. He mostly focuses on fine-tuning techniques.
 
 Education:
 
@@ -57,7 +64,7 @@ Education:
 
 ### Jiahe Chen
 
-Jiahe is a Ph.D. student in the Department of Computer Science at City University of Hong Kong, supervised by Professor Ziye Ma. He mostly focuses on zeroth-order optimization and machine learning.
+Jiahe is a Ph.D. student in the Department of Computer Science. He mostly focuses on zeroth-order optimization and machine learning.
 
 Education:
 
@@ -65,7 +72,7 @@ Education:
 
 ### Tianqi Shen
 
-Tianqi Shen is a Ph.D. student in the Department of Computer Science at City University of Hong Kong, supervised by Professor Ziye Ma. His research focuses on optimization algorithms for machine learning and their applications. His interests include matrix sensing, tensor algebra, and topological data analysis.
+Tianqi Shen is a Ph.D. student in the Department of Computer Science. His research focuses on optimization algorithms for machine learning and their applications. His interests include matrix sensing, tensor algebra, and topological data analysis.
 
 Education:
 
@@ -76,7 +83,7 @@ Education:
 
 ### Runze Shi
 
-Runze is a MPhil student in the Department of Computer Science at City University of Hong Kong. His research interests mostly focuse on mathematical parts of machine learning.
+Runze is a MPhil student in the Department of Computer Science. His research interests mostly focuse on mathematical parts of machine learning.
 
 Education:
 
