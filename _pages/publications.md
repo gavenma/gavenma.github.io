@@ -12,6 +12,7 @@ hide_archive_title: true
 {% endif %}
 
 {% include base_path %}
+{% assign publications_by_date = site.publications | sort: "date" | reverse %}
 
 <section class="publication-index" data-publication-index aria-labelledby="publication-index-title">
   <div class="publication-index__intro">
@@ -26,7 +27,7 @@ hide_archive_title: true
     <div class="publication-filters" role="group" aria-label="Filter publications by year">
       <button class="publication-filter is-active" type="button" data-publication-filter="all" aria-pressed="true">All</button>
       {% assign publication_years = "" %}
-      {% for post in site.publications reversed %}
+      {% for post in publications_by_date %}
         {% assign year = post.date | date: "%Y" %}
         {% unless publication_years contains year %}
           <button class="publication-filter" type="button" data-publication-filter="{{ year }}" aria-pressed="false">{{ year }}</button>
@@ -37,7 +38,7 @@ hide_archive_title: true
   </div>
 
   <div class="publication-index__list">
-    {% for post in site.publications reversed %}
+    {% for post in publications_by_date %}
       {% include publication-item.html post=post %}
     {% endfor %}
   </div>

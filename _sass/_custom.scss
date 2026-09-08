@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
   font-size: 16px;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
@@ -552,6 +552,7 @@ input:focus-visible {
 
 .home-content {
   max-width: 48rem;
+  font-family: inherit;
 }
 
 .home-content > h1 {
@@ -569,8 +570,8 @@ input:focus-visible {
 }
 
 .home-content > p:first-of-type {
-  font-size: 1.1rem;
-  line-height: 1.72;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 .home-content p,
