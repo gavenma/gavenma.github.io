@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   background: var(--paper);
   color: var(--ink);
-  font-family: "Avenir Next", "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-family: $global-font-family;
   font-size: 16px;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
@@ -185,7 +185,7 @@ input:focus-visible {
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -281,7 +281,7 @@ input:focus-visible {
   color: var(--accent);
   font-size: 0.7rem;
   font-weight: 800;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   line-height: 1.4;
   text-transform: uppercase;
 }
@@ -563,6 +563,7 @@ input:focus-visible {
   font-family: inherit;
   font-size: 2.25rem;
   font-weight: 700;
+  line-height: 1.15;
 }
 
 .home-content > h1:first-child {
@@ -577,7 +578,7 @@ input:focus-visible {
 .home-content p,
 .home-content li {
   color: var(--muted);
-  line-height: 1.75;
+  line-height: 1.65;
 }
 
 .home-content strong,
