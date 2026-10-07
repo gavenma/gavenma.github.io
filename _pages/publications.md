@@ -17,8 +17,7 @@ hide_archive_title: true
 <section class="publication-index" data-publication-index aria-labelledby="publication-index-title">
   <div class="publication-index__intro">
     <p class="eyebrow">Research archive</p>
-    <h2 id="publication-index-title">Publications</h2>
-    <p>Titles open the linked preprint or paper. Hover a row for a quick abstract preview, or use the Abstract control on touch and keyboard devices.</p>
+    <h1 id="publication-index-title">Publications</h1>
   </div>
 
   <div class="publication-index__tools">

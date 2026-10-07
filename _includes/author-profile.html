@@ -8,15 +8,33 @@
 
 <div class="author-card" itemscope itemtype="http://schema.org/Person">
   <div class="author-card__visuals">
+    {% if page.layout == 'home' and page.fun_facts %}
+    <details class="portrait-facts" data-portrait-facts>
+      <summary aria-label="Fun facts about {{ author.name }}" title="Fun facts">
+    {% endif %}
     {% if author.avatar contains '://' %}
       <img class="author-card__portrait" src="{{ author.avatar }}" alt="{{ author.name }}">
     {% elsif author.avatar %}
       <img class="author-card__portrait" src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="{{ author.name }}">
     {% endif %}
+    {% if page.layout == 'home' and page.fun_facts %}
+        <span class="portrait-facts__hint" aria-hidden="true"><i class="fas fa-plus"></i></span>
+      </summary>
+      <aside class="portrait-facts__panel" aria-labelledby="portrait-facts-title">
+        <h2 id="portrait-facts-title">Fun facts</h2>
+        <button class="portrait-facts__close" type="button" aria-label="Close fun facts" title="Close fun facts" hidden><i class="fas fa-times" aria-hidden="true"></i></button>
+        <p>{{ page.fun_facts | escape }}</p>
+      </aside>
+    </details>
+    {% endif %}
   </div>
 
   <div class="author__content">
-    <h2 class="author__name" itemprop="name">{{ author.name }}</h2>
+    {% if page.layout == 'home' %}
+      <h1 class="author__name" itemprop="name">{{ author.name }}</h1>
+    {% else %}
+      <h2 class="author__name" itemprop="name">{{ author.name }}</h2>
+    {% endif %}
     {% if author.bio %}<p class="author__bio" itemprop="jobTitle">{{ author.bio }}</p>{% endif %}
   </div>
 
@@ -39,6 +57,9 @@
     {% endif %}
     {% if author.googlescholar %}
       <li><a href="{{ author.googlescholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+    {% endif %}
+    {% if author.oscholar %}
+      <li><a href="{{ author.oscholar }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-fw fa-book-open" aria-hidden="true"></i> OScholar</a></li>
     {% endif %}
   </ul>
 </div>

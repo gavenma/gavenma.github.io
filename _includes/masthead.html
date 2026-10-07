@@ -3,22 +3,25 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
-        <button type="button" aria-label="Open navigation"><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/"><span class="masthead__brand-mark" aria-hidden="true"><span>Z</span><span>M</span></span>{{ site.title }}</a></li>
+      <a class="site-brand" href="{{ base_path }}/">{{ site.title }}</a>
+      <nav id="primary-navigation" class="site-navigation" aria-label="Primary navigation" data-collapsed="true">
+        <button class="site-navigation__toggle" type="button" aria-expanded="false" aria-controls="site-navigation-panel">
+          <i class="fas fa-bars" aria-hidden="true"></i><span>Menu</span>
+        </button>
+        <div class="site-navigation__panel" id="site-navigation-panel" data-sliding-nav>
+          <span class="nav-indicator" aria-hidden="true"></span>
+          <a href="{{ base_path }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>About</a>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <a href="{{ domain }}{{ link.url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
           {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
+        </div>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+      <button class="theme-toggle" type="button" aria-label="Switch color theme" title="Switch color theme" aria-pressed="false">
         <i class="fas fa-adjust" aria-hidden="true"></i>
         <span class="sr-only">Switch color theme</span>
       </button>

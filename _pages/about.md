@@ -3,21 +3,26 @@ permalink: /
 title: "Personal Website of Ziye(Gaven) Ma"
 excerpt: "About me"
 layout: home
+fun_facts: >-
+  I enjoy photography, watching Anime, and experiencing a city by wandering about (a.k.a city walk lol). Photo credits to my Mom, the shot was taken near 观妙亭 of 景山公园 in May of 2021, and in the background is the breathtaking Forbidden City.
 redirect_from: 
   - /about/
   - /about.html
 ---
-Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in the [CS department](https://www.cs.cityu.edu.hk) at City Universtiy of Hong Kong. I am especially grateful to receive the honorary title of presidential assistant professor at CityU. I'm also known as Gaven, so feel free to call me whichever way you prefer. I obtained my Ph.D. from the EECS department of UC Berkeley, supervised by [Somayeh Sojoudi](https://people.eecs.berkeley.edu/~sojoudi/). Prior to that, I studied Engineering Science at the University of Toronto and did research at [STARS lab](https://starslab.ca). The majority of my early life was spent jumping back and forth between Beijing and Toronto, both of which places I call home.
+<section id="about" class="home-about" aria-labelledby="about-title" data-reveal markdown="1">
 
-I am also a co-organizer of FAI (Foundational AI), where we organize [online seminars](https://www.fai-seminar.ac.cn) and [offline conferences](https://www.faic.cc). The goal is to create a focused group of researchers and enthusiasts who are keen on developments on the foundations of AI and machine learning. If you also share a similar vision, we would be glad to have you join our events, and talk more with our members.
+<h2 id="about-title">About</h2>
 
-Recruitments
-======
-Our lab recruits full-time PhD students annually, but the quota may vary year by year. For those who are interested please send me a direct email. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, NSFC, CityU HK, and other partners. I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
+Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in the [CS department](https://www.cs.cityu.edu.hk) at City Universtiy of Hong Kong. I am especially grateful to receive the honorary title of [presidential assistant professor](https://www.cityu.edu.hk/en/vpti/presidential-assistant-professors-scheme/paps) at CityU. I'm also known as Gaven, so feel free to call me whichever way you prefer. I obtained my Ph.D. from the EECS department of UC Berkeley, supervised by [Somayeh Sojoudi](https://people.eecs.berkeley.edu/~sojoudi/). Prior to that, I studied Engineering Science at the University of Toronto and did research at [STARS lab](https://starslab.ca). The majority of my early life was spent jumping back and forth between Beijing and Toronto, both of which places I call home.
 
+I am also a co-organizer of FAI (Foundational AI), where we organize [online seminars](https://www.fai-seminar.ac.cn) and [offline conferences](https://www.faic.cc). The goal is to create a focused group of researchers and enthusiasts who are keen on theoretical or foundational aspects of AI and machine learning. If you also share a similar vision, we would be glad to have you join our events, and talk more with our members.
 
-Research Interest
-======
+</section>
+
+<section id="research-interest" class="home-research" aria-labelledby="research-title" data-reveal markdown="1">
+
+<h2 id="research-title">Research</h2>
+
 My research aims to develop explainable and efficient machine learning systems, emphasizing the exploration of new theoretical tools and perspectives. These efforts are directed towards demystifying various phenomena in modern machine learning. Mathematically, my work predominantly addresses non-convex optimization problems, drawing inspirations from matrix theory, algebraic geometry and other fields. 
 
 From a high level, my research mostly involves two parts:
@@ -27,6 +32,14 @@ From a high level, my research mostly involves two parts:
 
 For any inquiries, concerns, or suggestions regarding my research, please do not hesitate to contact me via email. I am committed to engaging in fruitful discussions and am always open to feedback.
 
-Fun Facts
-======
-I enjoy photography, watching Anime, and experiencing a city by wandering about (a.k.a city walk lol). Photo credits to my Mom, the shot was taken near 观妙亭 of 景山公园 in May of 2021, and in the background is the breathtaking Forbidden City.
+</section>
+<section id="recruitments" class="home-recruitment" aria-labelledby="recruitment-title" data-reveal markdown="1">
+
+<h2 id="recruitment-title">Recruitment</h2>
+
+Our lab recruits full-time PhD students annually, but the quota may vary year by year. For those who are interested please send me a direct email. Please refer to [this page]({{ '/recruitment/' | relative_url }}) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, NSFC, CityU HK, and other partners. I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
+
+<a class="text-link" href="{{ '/recruitment/' | relative_url }}">Explore opportunities <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+
+</section>
+{% include home-publications.html %}

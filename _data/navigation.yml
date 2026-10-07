@@ -1,4 +1,4 @@
-# main links links
+# Add header links here; the menu adapts to the available width.
 main:
   - title: "Publications"
     url: /publications/  
@@ -8,4 +8,3 @@ main:
   
   - title: "MOFA Lab"
     url: /mofa/  
-    

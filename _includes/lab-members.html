@@ -1,0 +1,26 @@
+{% assign members = site.data.lab_members | where: "group", include.group %}
+<div class="lab-members">
+  {% for member in members %}
+  {% assign member_id = member.name | slugify %}
+  <details class="lab-member" data-hover-details>
+    <summary aria-label="Details about {{ member.name | escape }}">
+      <span class="lab-member__name">{{ member.name | escape }}</span>
+      <span class="lab-member__focus">{{ member.focus | escape }}</span>
+      <span class="lab-member__hint" aria-hidden="true"><i class="fas fa-plus"></i></span>
+    </summary>
+    <aside class="lab-member__panel portrait-facts__panel" aria-labelledby="{{ member_id }}-details-title">
+      <h3 id="{{ member_id }}-details-title">{{ member.name | escape }}</h3>
+      <button class="portrait-facts__close" data-details-close type="button" aria-label="Close details about {{ member.name | escape }}" title="Close details" hidden><i class="fas fa-times" aria-hidden="true"></i></button>
+      <p class="lab-member__research">{{ member.focus | escape }}</p>
+      {% if member.description %}<p>{{ member.description | escape }}</p>{% endif %}
+      {% if member.education %}
+      <ul class="lab-member__education">
+        {% for qualification in member.education %}<li>{{ qualification | escape }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+      {% if member.advisor %}<p>Ph.D. advisor: {{ member.advisor | escape }}</p>{% endif %}
+      {% if member.scholar %}<a class="text-link" href="{{ member.scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar <i class="fas fa-arrow-up" aria-hidden="true"></i></a>{% endif %}
+    </aside>
+  </details>
+  {% endfor %}
+</div>

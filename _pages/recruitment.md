@@ -6,7 +6,7 @@ layout: single
 
 We are actively seeking dedicated and enthusiastic individuals to join us. If you have an interest in pioneering new ideas and establishing robust theoretical underpinnings, we believe our lab could be the right place for you. 
 
-## Available Positions
+## Available Positions {#available-positions}
 
 ### Postdoctoral Researchers
 We invite applications for postdoctoral positions in machine learning theory, specifically from individuals with expertise in mathematical optimization. Candidates with a more applied background in areas such as computer vision, natural language processing, or large language models, who are open to the idea of doing a bit more thoery work, are also encouraged to apply. We offer competitive salaries by Hong Kong standards, with flexible employment durations tailored to individual needs.
@@ -24,14 +24,14 @@ Regardless, a certain degree of mathematical maturity is preferred, and exceptio
 ### Research Assistants (RA)
 Right now we do not offer regular RA positions, and such applications are processed on a case-by-case basis. If you have a clear research vision and plan, and think that I could be of any help to you, please let me know so that we could discuss further.
 
-## Some (Potential) Pros
+## Some (Potential) Pros {#lab-life}
 
 - **Location**: Hong Kong's strategic location offers unparalleled access to major cities worldwide, facilitating travel to conferences crucial for computer science researchers and enhancing personal travel experiences. The presence of leading hedge funds and tech giants in the vicinity also positions Hong Kong as an ideal hub for exploring industry opportunities in the Asia-Pacific region. 
 
 - **Culture**: In our lab, we prioritize mutual respect and collaborative efforts. My objective is to foster your growth towards becoming independent scholars, providing the necessary support and guidance along the way. It's important to me to respect your personal commitments and ensure a balanced approach to research activities. We'll explore opportunities for global collaborations, expanding academic horizons, while maintaining a professional environment that respects your individuality and privacy.
 
 
-## How to Apply
+## How to Apply {#how-to-apply}
 
 Prospective candidates are encouraged to reach out via my email: [ziyema at cityu dot edu dot hk](mailto:ziyema@cityu.edu.hk). Please include the following details in your application:
 
@@ -39,4 +39,3 @@ Prospective candidates are encouraged to reach out via my email: [ziyema at city
 - A CV detailing your educational background, list of publications (including works in progress, with clear explanations), and any relevant awards or experiences.
 
 Please use the subject line "Application for [Position Name] + [Ideal Start Date]" when sending your application. While I strive to respond to all inquiries, please accept my apologies in advance if you do not receive a reply due to time constraints. Your understanding is greatly appreciated.
-

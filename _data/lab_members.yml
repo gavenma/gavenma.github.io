@@ -1,0 +1,81 @@
+- name: Xinsong Ma
+  group: postdocs
+  focus: Trustworthy ML & explainability
+  description: "Xinsong studies trustworthy and explainable machine learning, including robustness and fairness, out-of-distribution detection, and anomaly detection."
+  education:
+    - "Ph.D., Wuhan University, 2026"
+  advisor: WeiWei Liu
+  scholar: "https://scholar.google.com/citations?user=Cv1FsuAAAAAJ&hl=en"
+
+- name: Jun Chen
+  group: postdocs
+  focus: Statistical learning & agentic AI
+  description: "Jun works on statistical machine learning theory, unsupervised learning, and agentic AI."
+  education:
+    - "Ph.D., Agricultural Information Engineering, Huazhong Agricultural University"
+    - "B.Sc., Statistics, Taiyuan University of Technology"
+  advisor: Hong Chen
+
+- name: Hanzhang Wang
+  group: phd
+  focus: LLM pre-training & quantization
+  education:
+    - "B.Sc., Data Science, Harbin Institute of Technology (Shenzhen)"
+
+- name: Junze He
+  group: phd
+  focus: Matrix optimization & over-parametrization
+  education:
+    - "B.Sc., Mathematics, Central South University"
+
+- name: Xiaying Chen
+  group: phd
+  focus: Efficient machine learning
+  description: "Jointly based at City University of Hong Kong and Shenzhen Loop Area Institute (SLAI), supervised by Ziye Ma."
+  education:
+    - "B.Sc., Automation, Beihang University"
+
+- name: Changrui Fang
+  group: phd
+  focus: Optimization & data-efficient ML
+  description: "Changrui also explores a range of mathematical topics and received a national second prize in China's mathematical modelling contest."
+  education:
+    - "B.Sc., Mathematics, Wuhan University"
+
+- name: Bowen Zhang
+  group: phd
+  focus: Fine-tuning techniques
+  education:
+    - "M.S., EE, Chinese University of Hong Kong"
+    - "B.Sc., Automation, Zhejiang University"
+
+- name: Jiahe Chen
+  group: phd
+  focus: Zeroth-order optimization
+  description: "Jiahe studies zeroth-order optimization and machine learning."
+  education:
+    - "B.Sc., EECS, Peking University"
+
+- name: Tianqi Shen
+  group: phd
+  focus: Optimization for machine learning
+  description: "Tianqi's interests include matrix sensing, tensor algebra, and topological data analysis."
+  education:
+    - "M.Sc., Intelligent Systems, Beihang University"
+    - "B.Sc., Control and Mathematics, Beihang University"
+
+- name: Runze Shi
+  group: mphil
+  focus: Mathematics of machine learning
+  education:
+    - "B.Sc., Mathematics, University of Birmingham"
+
+- name: Jinji Yang
+  group: alumni
+  focus: Ph.D. student, Soochow University
+  description: "Former research assistant working on matrix optimization and matrix sensing. Now pursuing a Ph.D. at Soochow University."
+
+- name: Kunhan Gao
+  group: alumni
+  focus: Master's student, Yale University
+  description: "Former undergraduate research assistant working on optimization. Now pursuing a master's degree at Yale University."

@@ -1,0 +1,22 @@
+<section id="selected-work" class="home-work" aria-labelledby="selected-work-title" data-reveal data-carousel>
+  <div class="home-work__heading">
+    <div>
+      <h2 id="selected-work-title">Recent publications</h2>
+    </div>
+    <a class="text-link" href="{{ '/publications/' | relative_url }}">Full publication index <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </div>
+  <div id="recent-publications" class="home-work__list" tabindex="0" role="region" aria-label="Publication carousel" data-carousel-track>
+    {% assign selected_publications = site.publications | sort: "date" | reverse %}
+    {% for post in selected_publications limit:6 %}
+      {% include publication-item.html post=post compact=true %}
+    {% endfor %}
+  </div>
+  <div class="home-work__footer" data-carousel-controls hidden>
+    <div class="carousel-progress" aria-hidden="true"><span data-carousel-progress></span></div>
+    <div class="carousel-controls">
+      <span class="carousel-count" data-carousel-count aria-live="polite" aria-atomic="true"></span>
+      <button type="button" class="icon-control" data-carousel-prev aria-label="Previous publications" title="Previous publications" aria-controls="recent-publications"><i class="fas fa-arrow-left" aria-hidden="true"></i></button>
+      <button type="button" class="icon-control" data-carousel-next aria-label="Next publications" title="Next publications" aria-controls="recent-publications"><i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+    </div>
+  </div>
+</section>
