@@ -9,6 +9,8 @@ redirect_from:
 ---
 Hi, my name is Ziye Ma (马梓业), and I'm currently an assistant professor in the [CS department](https://www.cs.cityu.edu.hk) at City Universtiy of Hong Kong. I am especially grateful to receive the honorary title of presidential assistant professor at CityU. I'm also known as Gaven, so feel free to call me whichever way you prefer. I obtained my Ph.D. from the EECS department of UC Berkeley, supervised by [Somayeh Sojoudi](https://people.eecs.berkeley.edu/~sojoudi/). Prior to that, I studied Engineering Science at the University of Toronto and did research at [STARS lab](https://starslab.ca). The majority of my early life was spent jumping back and forth between Beijing and Toronto, both of which places I call home.
 
+I am also a co-organizer of FAI (Foundational AI), where we organize [online seminars](https://www.fai-seminar.ac.cn) and [offline conferences](https://www.faic.cc). The goal is to create a focused group of researchers and enthusiasts who are keen on developments on the foundations of AI and machine learning. If you also share a similar vision, we would be glad to have you join our events, and talk more with our members.
+
 Recruitments
 ======
 Our lab recruits full-time PhD students annually, but the quota may vary year by year. For those who are interested please send me a direct email. Please refer to [this page](recruitment.md) for more detailed information. Our lab is supported through research grants by Research Grant Council of Hong Kong, NSFC, CityU HK, and other partners. I also hold an adjuct positon at Shenzhen Loop Area Institue (SLAI), so you're welcome to apply to my lab through SLAI as well.
