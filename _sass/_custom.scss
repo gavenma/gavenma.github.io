@@ -484,6 +484,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, [data-carousel-track
 .pagination--pager.disabled { color: var(--muted); }
 .publication-detail__authors { color: var(--muted); font-size: var(--type-meta); }
 .publication-detail__venue { color: var(--secondary); font-size: var(--type-meta); }
+.publication-index, .home-work, .lab-members, .publication-detail {
+  --type-body: 18px;
+  --type-meta: 16px;
+  --type-label: 14px;
+  --type-paper: 24px;
+}
+.publication-detail { --type-title: var(--type-paper); --type-section: 20px; }
 .page__title { overflow-wrap: break-word; }
 .page__footer {
   position: static;
@@ -518,19 +525,33 @@ body:has(.home-sections) .page__footer { padding-bottom: 112px; }
 }
 
 @media (max-width: 600px) {
+  :root {
+    --type-body: 15px;
+    --type-meta: 14px;
+    --type-label: 13px;
+    --type-title: 32px;
+    --type-section: 26px;
+    --type-paper: 22px;
+  }
+  .publication-index, .home-work, .lab-members, .publication-detail {
+    --type-body: 15px;
+    --type-meta: 14px;
+    --type-label: 13px;
+    --type-paper: 22px;
+  }
+  .publication-detail { --type-section: 18px; }
   .masthead { top: 10px; }
   .masthead::before { inset: 0 12px; }
   .masthead__inner-wrap { margin: 0 12px; padding: 8px 10px 8px 18px; }
   .masthead__menu { gap: 8px; }
-  :root { --type-title: 42px; }
-  .site-brand { font-size: 24px; }
+  .site-brand { font-size: 20px; }
   .site-navigation__toggle { padding: 9px 14px; }
   #main { padding: 36px 20px 48px; }
   .site-navigation[data-collapsed="true"] .site-navigation__panel { right: -52px; }
   .author-card { grid-template-columns: 104px minmax(0, 1fr); gap: 16px 20px; }
   .author-card__visuals { grid-row: 1; }
   .author-card__portrait, .sidebar .author-card__portrait { width: 104px; height: 104px; }
-  .author__name, .sidebar .author__name { font-size: 30px; }
+  .author__name, .sidebar .author__name { font-size: 24px; }
   .author__bio, .sidebar .author__bio { margin-bottom: 0; }
   .author__urls { grid-column: 1 / -1; gap: 0 16px; }
   .home-identity .author-card { grid-template-columns: 104px minmax(0, 1fr); gap: 16px 20px; }
@@ -553,6 +574,7 @@ body:has(.home-sections) .page__footer { padding-bottom: 112px; }
   .publication-item__heading { flex-wrap: wrap; gap: 12px; }
   .publication-item__title { flex-basis: 100%; }
   .publication-item__index { padding: 0; }
+  .publication-search[type="search"] { font-size: 16px; }
   .page__footer { padding: 28px 20px; }
 }
 

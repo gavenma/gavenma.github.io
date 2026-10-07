@@ -8,8 +8,8 @@ Reviewed on 2026-10-07 against https://www.x-agi.cc/ and its About page.
 | --- | --- |
 | Decorative corner lines, layered panel shadows, and framed reading sections competed with the text. | Removed the decorative main-layout pseudo-elements and panel treatments. Reading content and the profile now sit directly on the page. |
 | Repeated overrides made spacing, typography, and hover states inconsistent. | Consolidated the custom stylesheet into one shared design system with explicit light/dark colors and responsive rules. |
-| Publication titles and metadata had a different scale across the homepage and archive. | Both lists use 28px titles and 18px authors, venues, and links. Abstracts use the 20px body scale. |
-| The first About paragraph used a lead style with a barely different size. | All reading paragraphs and research list items now use 20px with the same line height. Differences are reserved for clear roles. |
+| Publication titles and metadata had a different scale across the homepage and archive. | Both lists and paper details use 24px titles, 16px metadata, and 18px abstracts on desktop/tablet; mobile uses 22px, 14px, and 15px respectively. |
+| The first About paragraph used a lead style with a barely different size. | All reading paragraphs and research list items use 20px on desktop/tablet and 15px on mobile with the same line height. The first paragraph has no special size. |
 | The mixed biography columns and research/recruitment grid fragmented the reading order. | Replaced them with one reading column below a compact identity band. The order is About, Research, Recruitment, then Recent publications. |
 | Fun facts occupied a full reading section despite being secondary content. | Moved the original text into an animated glass popover on the homepage portrait. Mouse hover or keyboard focus reveals it; click/tap pins it open. Escape, outside click, and a close control dismiss it. Native disclosure remains available without JavaScript. |
 | The desktop header hid every navigation link behind Menu. | Desktop now shows inline links in an inset floating glass capsule; mobile retains the glass disclosure menu. |
@@ -39,18 +39,34 @@ Reviewed on 2026-10-07 against https://www.x-agi.cc/ and its About page.
 
 ## Typography
 
-| Role | Size |
-| --- | --- |
-| Body and abstracts | 20px |
-| Intro paragraph | 20px, identical to other reading paragraphs |
-| Page titles and homepage name | 48px desktop, 42px mobile |
-| Section headings | 36px |
-| Subheadings | 28px |
-| Publication titles, homepage and archive | 28px |
-| Authors, venues, links, contacts, navigation, search, filters | 18px |
-| Small labels and footer | 16px |
+| Role | Desktop / tablet | Mobile (600px and below) |
+| --- | --- | --- |
+| Reading body and intro paragraphs | 20px, all paragraphs equal | 15px, all paragraphs equal |
+| Publication abstracts and member details/focus | 18px | 15px |
+| Page titles and homepage name | 48px | 32px |
+| Section headings | 36px | 26px |
+| General subheadings | 28px | 22px |
+| Publication titles, including paper details, and member names | 24px | 22px |
+| Paper-detail Abstract heading | 20px | 18px |
+| Publication/member metadata and links | 16px | 14px |
+| Contacts and navigation | 18px | 14px |
+| Publication search | 16px | 16px to avoid iOS focus zoom |
+| Publication/member labels | 14px | 13px |
+| General small labels and footer | 16px | 13px |
 
-## Verification
+## Current Typography Verification
+
+- Reviewed the homepage, publication archive, Recruitment, and MOFA Lab at 320px, 375px, 768px, and 1280px. No horizontal page overflow was found, and profile images loaded.
+- Computed styles confirmed equal intro paragraphs, matching publication-title sizes across homepage/archive, and the intended compact member scale. Desktop/tablet reading text remains 20px.
+- A representative long-title paper record was checked at 375px, 768px, and 1280px. Its title matches list titles at 22px mobile and 24px desktop/tablet; the Abstract heading is subordinate at 18px and 20px. Abstract text is 15px and 18px respectively.
+- Reviewed mobile light and desktop dark member popovers. Panels fit the reading column, and long mobile details scroll internally. Checked Escape dismissal for member panels and the mobile menu, including menu focus restoration.
+- Checked publication search with "LoRA" and expanded its abstract; mobile abstract text is 15px with a 26.25px line height. Reviewed the dark archive rendering.
+- Section links still resolve to headings: four on the homepage, five on MOFA Lab, and three on Recruitment. The archive retains back-to-top without treating generated paper titles as reading sections.
+- Jekyll development build and whitespace checks passed. No warning/error console entries were captured during the final paper-detail check.
+
+## Earlier Verification
+
+The following records describe earlier design revisions; their former font sizes have been superseded by the table above.
 
 - This revision was inspected at 1280px desktop, 768px tablet, and 375px mobile widths. The header switches to Menu below 820px and when additional links no longer fit.
 - Computed styles confirmed homepage reading paragraphs and recruitment text are 20px, publication titles are 28px, archive metadata is 18px, and abstracts are 20px. The mobile homepage name is 42px.
