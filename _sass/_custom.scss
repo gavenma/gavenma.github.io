@@ -1,10 +1,10 @@
 :root {
-  --type-body: 20px;
-  --type-meta: 18px;
-  --type-label: 16px;
-  --type-title: 48px;
-  --type-section: 36px;
-  --type-paper: 28px;
+  --type-body: 16px;
+  --type-meta: 15px;
+  --type-label: 13px;
+  --type-title: 36px;
+  --type-section: 28px;
+  --type-paper: 22px;
   --paper: #f8f9f9;
   --paper-strong: #eef0f0;
   --ink: #27262e;
@@ -81,52 +81,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [data-carousel-track
   outline-offset: 4px;
 }
 
-// Glass is reserved for floating controls; reading surfaces remain unframed.
-.masthead {
-  position: sticky;
-  top: 16px;
-  z-index: 30;
-  border: 0;
-  background: transparent;
-  animation: none;
-}
-
-.masthead::before {
-  position: absolute;
-  inset: 0 max(28px, calc((100vw - 1124px) / 2));
-  z-index: -1;
-  content: "";
-  border: 1px solid var(--glass-edge);
-  border-radius: 999px;
-  background: var(--glass);
-  box-shadow: 0 6px 24px var(--shadow);
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  transition: background-color 300ms ease, box-shadow 300ms ease;
-}
-
-.masthead.is-scrolled::before { background: var(--glass-highlight); box-shadow: 0 8px 28px var(--shadow); }
-
-.masthead__inner-wrap {
-  max-width: 1124px;
-  margin: 0 auto;
-  padding: 10px 18px 10px 26px;
-  animation: none;
-}
-
-.masthead__menu { display: flex; align-items: center; gap: 12px; }
-.site-brand {
-  flex-shrink: 0;
-  white-space: nowrap;
-  margin-right: auto;
-  color: var(--ink);
-  font-size: 28px;
-  font-weight: 600;
-  text-decoration: none;
-  line-height: 1.2;
-}
-
-.site-navigation { position: relative; flex-shrink: 0; }
+// Shared glass controls; header geometry is defined in _masthead.scss.
 .site-navigation__toggle, .theme-toggle, .publication-item__toggle, .icon-control {
   display: inline-flex;
   justify-content: center;
@@ -161,55 +116,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, [data-carousel-track
 .icon-control[data-carousel-prev]:hover:not(:disabled) i { transform: translateX(-3px); }
 .theme-toggle:hover i { transform: rotate(35deg); }
 
-.theme-toggle { width: 44px; flex: 0 0 44px; padding: 0; }
-.site-navigation__toggle { display: none; }
-.site-navigation__panel {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  white-space: nowrap;
-}
-
-.site-navigation__panel[hidden] { display: none; }
-.site-navigation__panel a {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 44px;
-  padding: 8px 16px;
-  border-radius: 999px;
-  color: var(--ink);
-  font-size: var(--type-meta);
-  text-decoration: none;
-}
-
-.site-navigation__panel:not([data-enhanced]) a:hover, .site-navigation__panel:not([data-enhanced]) a[aria-current="page"] {
-  background: var(--glass-highlight);
-  color: var(--accent);
-}
-
-.site-navigation__panel a:hover, .site-navigation__panel a[aria-current="page"] { color: var(--accent); }
+.theme-toggle { width: 44px; padding: 0; }
 .nav-indicator { position: absolute; top: 0; left: 0; width: var(--indicator-width, 0px); height: var(--indicator-height, 0px); transform: translate(var(--indicator-x, 0px), var(--indicator-y, 0px)); border-radius: 999px; background: var(--glass-highlight); pointer-events: none; opacity: 0; transition: transform 360ms cubic-bezier(.22, 1, .36, 1), width 360ms cubic-bezier(.22, 1, .36, 1), height 360ms ease, opacity 180ms ease; }
 [data-sliding-nav][data-enhanced] > .nav-indicator { opacity: 1; }
-
-.site-navigation__panel i { display: none; }
-
-.site-navigation[data-collapsed="true"] .site-navigation__toggle { display: inline-flex; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel { position: absolute; top: calc(100% + 20px); right: 0; display: grid; width: 264px; max-width: calc(100vw - 40px); max-height: calc(100dvh - 120px); overflow-y: auto; overscroll-behavior: contain; padding: 12px; border: 1px solid var(--glass-edge); border-radius: 24px; background: var(--glass); box-shadow: 0 12px 36px var(--shadow); -webkit-backdrop-filter: blur(24px); backdrop-filter: blur(24px); white-space: normal; animation: menu-appear 180ms ease both; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel[hidden] { display: none; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel i { display: inline; flex-shrink: 0; font-size: 13px; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel a { gap: 12px; animation: menu-appear 320ms ease both; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel a:nth-of-type(2) { animation-delay: 40ms; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel a:nth-of-type(3) { animation-delay: 80ms; }
-.site-navigation[data-collapsed="true"] .site-navigation__panel a:nth-of-type(4) { animation-delay: 120ms; }
-// Measure the complete desktop menu even when the disclosure is closed.
-.site-navigation .site-navigation__panel[data-measuring],
-.site-navigation[data-collapsed="true"] .site-navigation__panel[data-measuring] { position: fixed; top: 0; left: -10000px; right: auto; display: flex; width: max-content; max-width: none; max-height: none; padding: 0; border: 0; visibility: hidden; overflow: visible; white-space: nowrap; animation: none; }
-.site-navigation__panel[data-measuring] a { animation: none !important; }
-.site-navigation .site-navigation__panel[data-measuring] i { display: none; }
 
 #main {
   width: 100%;
@@ -259,7 +168,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, [data-carousel-track
 }
 
 .author__content { display: block; width: auto; padding: 0; }
-.author__name, .sidebar .author__name { margin: 0; font-family: inherit; font-size: 32px; font-weight: 600; }
+.author__name, .sidebar .author__name { margin: 0; font-family: inherit; font-size: 28px; font-weight: 600; }
 .author__bio, .sidebar .author__bio { margin: 10px 0 22px; color: var(--muted); font-size: var(--type-meta); line-height: 1.6; }
 .author__urls {
   display: grid !important; // Keep contacts visible when the legacy mobile handler runs.
@@ -485,12 +394,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, [data-carousel-track
 .publication-detail__authors { color: var(--muted); font-size: var(--type-meta); }
 .publication-detail__venue { color: var(--secondary); font-size: var(--type-meta); }
 .publication-index, .home-work, .lab-members, .publication-detail {
-  --type-body: 18px;
-  --type-meta: 16px;
-  --type-label: 14px;
-  --type-paper: 24px;
+  --type-body: 16px;
+  --type-meta: 14px;
+  --type-label: 13px;
+  --type-paper: 22px;
 }
-.publication-detail { --type-title: var(--type-paper); --type-section: 20px; }
+.publication-detail { --type-title: var(--type-paper); --type-section: 18px; }
 .page__title { overflow-wrap: break-word; }
 .page__footer {
   position: static;
@@ -514,7 +423,16 @@ body:has(.home-sections) .page__footer { padding-bottom: 112px; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 900px) {
+// Keep tablets and narrow landscape windows on the compact reading scale.
+@media (max-width: 1150px) {
+  :root {
+    --type-body: 16px;
+    --type-meta: 14px;
+    --type-label: 13px;
+    --type-title: 34px;
+    --type-section: 27px;
+    --type-paper: 22px;
+  }
   #main:not(.home-layout):has(> .sidebar) { grid-template-columns: 1fr; gap: 36px; }
   .author-card { display: grid; grid-template-columns: 144px minmax(0, 1fr); gap: 0 28px; }
   .author-card__visuals { grid-row: 1 / 3; margin: 0; }
@@ -524,7 +442,7 @@ body:has(.home-sections) .page__footer { padding-bottom: 112px; }
   .home-work__list { grid-auto-columns: 75%; gap: 24px; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px), (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
   :root {
     --type-body: 15px;
     --type-meta: 14px;
@@ -540,14 +458,7 @@ body:has(.home-sections) .page__footer { padding-bottom: 112px; }
     --type-paper: 22px;
   }
   .publication-detail { --type-section: 18px; }
-  .masthead { top: 10px; }
-  .masthead::before { inset: 0 12px; }
-  .masthead__inner-wrap { margin: 0 12px; padding: 8px 10px 8px 18px; }
-  .masthead__menu { gap: 8px; }
-  .site-brand { font-size: 20px; }
-  .site-navigation__toggle { padding: 9px 14px; }
   #main { padding: 36px 20px 48px; }
-  .site-navigation[data-collapsed="true"] .site-navigation__panel { right: -52px; }
   .author-card { grid-template-columns: 104px minmax(0, 1fr); gap: 16px 20px; }
   .author-card__visuals { grid-row: 1; }
   .author-card__portrait, .sidebar .author-card__portrait { width: 104px; height: 104px; }

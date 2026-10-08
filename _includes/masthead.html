@@ -1,10 +1,10 @@
 {% include base_path %}
 
-<div class="masthead">
+<header class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-brand" href="{{ base_path }}/">{{ site.title }}</a>
-      <nav id="primary-navigation" class="site-navigation" aria-label="Primary navigation" data-collapsed="true">
+      <a class="site-brand" href="{{ base_path }}/"><span class="site-brand__label">{{ site.title }}</span></a>
+      <nav id="primary-navigation" class="site-navigation" aria-label="Primary navigation" data-layout="compact" data-open="false">
         <button class="site-navigation__toggle" type="button" aria-expanded="false" aria-controls="site-navigation-panel">
           <i class="fas fa-bars" aria-hidden="true"></i><span>Menu</span>
         </button>
@@ -27,4 +27,4 @@
       </button>
     </div>
   </div>
-</div>
+</header>

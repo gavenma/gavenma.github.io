@@ -2,6 +2,10 @@
 
 Reviewed on 2026-10-07 against https://www.x-agi.cc/ and its About page.
 
+Updated on 2026-10-08: the header now has one container for its glass background and grid row. Navigation shows inline links whenever their natural width fits alongside the name and theme control; otherwise it uses Menu. Header layout has no device breakpoints or orientation timers. Its styles live in `_sass/_masthead.scss`, with disclosure and content-fit behavior in `assets/js/site.js`.
+
+Verified continuous resizing, without page reloads, at 320, 390, 600, 601, 761, 768, 844, 1024, 1150, and 1280px, including landscape/portrait transitions. The name, controls, and visible links remained within the capsule; no horizontal page overflow was found. Menu opening, viewport bounds, and Escape focus restoration passed. The preview uses an isolated build directory and the same origin for the page and assets.
+
 ## Findings And Corrections
 
 | Finding | Result |
@@ -31,7 +35,7 @@ Reviewed on 2026-10-07 against https://www.x-agi.cc/ and its About page.
 ## Reference Mapping
 
 - **Typography:** use the reference's Avenir Next/Avenir-led stack, including its Helvetica Neue and CJK fallbacks. Avenir is platform-installed, not bundled; other systems use the specified fallbacks and may render differently.
-- **Navigation:** the reference's floating glass capsule and visible desktop links, adapted to the academic site's routes. Below 820px, or whenever the links exceed the available width, use Menu and a glass disclosure panel. A sliding highlight follows hover/focus and the active page or section. Blur lives on a separate header background so the mobile menu can blur content behind it. The lower bar derives its section links automatically on all pages using the shared default layout. Adding a top-level page link still requires an entry in `_data/navigation.yml`.
+- **Navigation:** the reference's floating glass capsule, adapted to the academic site's routes. Show links inline when their natural widths fit; otherwise use Menu and a glass disclosure panel. The background and row share one width container. A sliding highlight follows hover/focus and the active page or section. Blur lives on the container's background layer so the dropdown can blur content behind it. The lower bar derives its section links automatically on all pages using the shared default layout. Adding a top-level page link requires an entry in `_data/navigation.yml`.
 - **Surfaces:** reserve glass for floating navigation and controls. Keep reading sections unframed in one column, with consistent alignment and 48px section gaps (40px on mobile). The homepage is capped at 1000px including side padding.
 - **Motion:** reference-style horizontal browsing for publications, arrow and icon feedback, staggered one-time section entrances, scroll-sensitive header styling, and a section dock with a reading-progress ring. No autoplay. Reading content is visible without JavaScript. Reduced motion bypasses section animation, pointer movement, and smooth scrolling as well as CSS transitions.
 - **Color:** adapt the reference's quiet contrast and restrained accents to a neutral light surface and charcoal dark surface, with violet links and teal secondary text.
@@ -39,22 +43,25 @@ Reviewed on 2026-10-07 against https://www.x-agi.cc/ and its About page.
 
 ## Typography
 
-| Role | Desktop / tablet | Mobile (600px and below) |
-| --- | --- | --- |
-| Reading body and intro paragraphs | 20px, all paragraphs equal | 15px, all paragraphs equal |
-| Publication abstracts and member details/focus | 18px | 15px |
-| Page titles and homepage name | 48px | 32px |
-| Section headings | 36px | 26px |
-| General subheadings | 28px | 22px |
-| Publication titles, including paper details, and member names | 24px | 22px |
-| Paper-detail Abstract heading | 20px | 18px |
-| Publication/member metadata and links | 16px | 14px |
-| Contacts and navigation | 18px | 14px |
-| Publication search | 16px | 16px to avoid iOS focus zoom |
-| Publication/member labels | 14px | 13px |
-| General small labels and footer | 16px | 13px |
+| Role | Desktop (>1150px) | Tablet (601–1150px) | Mobile |
+| --- | --- | --- | --- |
+| Reading body and intro paragraphs | 16px | 16px | 15px |
+| Publication abstracts and member details/focus | 16px | 16px | 15px |
+| Page titles and homepage name | 36px | 34px | 32px |
+| Section headings | 28px | 27px | 26px |
+| General subheadings | 22px | 22px | 22px |
+| Publication titles and member names | 22px | 22px | 22px |
+| Paper-detail Abstract heading | 18px | 18px | 18px |
+| Publication/member metadata and links | 14px | 14px | 14px |
+| Contacts | 15px | 14px | 14px |
+| Header name / navigation and controls | 20px / 14px | 20px / 14px | 20px / 14px |
+| Publication search | 14px | 14px | 16px |
+| Publication/member labels | 13px | 13px | 13px |
+| General small labels and footer | 13px | 13px | 13px |
 
-## Current Typography Verification
+Mobile content styling applies at 600px and below, and in short landscape viewports up to 900px wide and 600px tall. The header adapts only to the space its content needs.
+
+## Previous Typography Verification (2026-10-07)
 
 - Reviewed the homepage, publication archive, Recruitment, and MOFA Lab at 320px, 375px, 768px, and 1280px. No horizontal page overflow was found, and profile images loaded.
 - Computed styles confirmed equal intro paragraphs, matching publication-title sizes across homepage/archive, and the intended compact member scale. Desktop/tablet reading text remains 20px.

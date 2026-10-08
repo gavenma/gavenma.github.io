@@ -97,43 +97,60 @@
   if (navigation) {
     var navigationToggle = navigation.querySelector('.site-navigation__toggle');
     var navigationPanel = navigation.querySelector('.site-navigation__panel');
-    var navigationCollapsed = null;
+    var navigationMenu = navigation.closest('.masthead__menu');
+    var navigationBrand = navigationMenu.querySelector('.site-brand__label');
+    var navigationTheme = navigationMenu.querySelector('.theme-toggle');
     var setNavigationOpen = function (open) {
+      open = open && navigation.getAttribute('data-layout') === 'compact';
       navigationToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      navigationPanel.hidden = navigationCollapsed && !open;
+      navigation.setAttribute('data-open', open ? 'true' : 'false');
       navigationToggle.querySelector('i').classList.toggle('fa-bars', !open);
       navigationToggle.querySelector('i').classList.toggle('fa-times', open);
     };
     navigationToggle.addEventListener('click', function () {
-      setNavigationOpen(navigationPanel.hidden);
+      setNavigationOpen(navigation.getAttribute('data-open') !== 'true');
     });
     var fitNavigation = function () {
-      var menu = navigation.closest('.masthead__menu');
-      var brand = menu.querySelector('.site-brand');
-      var theme = menu.querySelector('.theme-toggle');
-      var gap = parseFloat(window.getComputedStyle(menu).columnGap) || 0;
       navigationPanel.setAttribute('data-measuring', '');
-      var requiredWidth = navigationPanel.getBoundingClientRect().width;
+      var linksWidth = navigationPanel.getBoundingClientRect().width;
       navigationPanel.removeAttribute('data-measuring');
-      var availableWidth = menu.clientWidth - brand.getBoundingClientRect().width - (theme ? theme.getBoundingClientRect().width : 0) - gap * 2;
-      var collapsed = window.innerWidth <= 820 || requiredWidth > availableWidth - 4;
-      if (collapsed !== navigationCollapsed) {
-        navigationCollapsed = collapsed;
-        navigation.setAttribute('data-collapsed', collapsed ? 'true' : 'false');
+      var menuStyle = window.getComputedStyle(navigationMenu);
+      var gap = parseFloat(menuStyle.columnGap) || 0;
+      var available = navigationMenu.getBoundingClientRect().width - navigationBrand.getBoundingClientRect().width - navigationTheme.offsetWidth - gap * 2;
+      var layout = linksWidth <= available ? 'inline' : 'compact';
+      if (navigation.getAttribute('data-layout') !== layout) {
+        var focusWasInNavigation = navigation.contains(document.activeElement);
+        navigation.setAttribute('data-layout', layout);
         setNavigationOpen(false);
+        if (focusWasInNavigation) {
+          if (layout === 'compact') { navigationToggle.focus(); }
+          else { navigationPanel.querySelector('a').focus(); }
+        }
       }
     };
+    var navigationFrame = null;
+    var scheduleNavigationFit = function () {
+      if (navigationFrame !== null) { return; }
+      navigationFrame = window.requestAnimationFrame(function () {
+        navigationFrame = null;
+        fitNavigation();
+      });
+    };
     fitNavigation();
-    if ('ResizeObserver' in window) { new ResizeObserver(fitNavigation).observe(navigation.closest('.masthead__menu')); }
-    window.addEventListener('resize', fitNavigation);
-    if (document.fonts) { document.fonts.ready.then(fitNavigation); }
+    if ('ResizeObserver' in window) {
+      var navigationObserver = new ResizeObserver(scheduleNavigationFit);
+      navigationObserver.observe(navigationMenu);
+      navigationObserver.observe(navigationBrand);
+    }
+    window.addEventListener('resize', scheduleNavigationFit);
+    if (document.fonts) { document.fonts.ready.then(scheduleNavigationFit); }
     document.addEventListener('click', function (event) {
       if (!navigation.contains(event.target)) {
         setNavigationOpen(false);
       }
     });
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && navigationCollapsed && !navigationPanel.hidden) {
+      if (event.key === 'Escape' && navigation.getAttribute('data-open') === 'true') {
         setNavigationOpen(false);
         navigationToggle.focus();
       }
